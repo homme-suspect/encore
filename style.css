@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0 auto;
+  background: url("");
+  background-size: cover;
+  color: black; /* Couleur de la police d'écriture */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  height: 30vh;
+  width: 30vh;
+  object-fit: cover;
+  padding: 30px;
+
+}
+
+
+header {
+  height: 200px;
+}
+
+section.top-page {
+  display: flex;
+  background: url("image/AdobeStock_650914550.jpeg");
+  background-size: cover;
+  max-width: 100%;
+  background-position: 100%, 40px;
+}
+
+nav.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 40px;
+  width: 100%;
+  padding-right: 10px;
+}
+
+nav.nav h1 {
+  color: white;
+  font-size: 50px;
+  font-family: Arial, sans-serif;
+}
+
+#content.character-section,
+#content.educational-section {
+  padding: 20px;
+  margin-top: 20vh;
+  text-align: center;
+}
+
+.character-section .main-text,
+.educational-section .main-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.character-section .left-paragraph,
+.character-section .middle-paragraph,
+.character-section .right-paragraph,
+.educational-section .text-group {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.character-section .left-paragraph,
+.educational-section h2 {
+  text-align: left;
+}
+
+.character-section .middle-paragraph,
+.educational-section .text-group {
+  text-align: center;
+}
+
+.character-section .right-paragraph,
+.educational-section p {
+  text-align: right;
+}
+
+#scroll-to-bottom {
+  position: static;
+  top: 16vh;
+  right: 5vh;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.boite {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.boite img {
+  width: 40%;
+  height: 40vh;
+  object-fit: cover;
+  margin-top: 15vh;
+  box-sizing: border-box;
+  padding: 8vh;
+}
+
+.top-left img,
+.top-right img,
+.bot-left img,
+.bot-right img {
+  width: 80vh;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-group {
+  margin-bottom: 30px;
+}
+
+.text-group h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-group p {
+  margin-bottom: 15px;
+}
+
+.book-film-section {
+  padding: 20px;
+  margin-top: 20vh;
+  text-align: center;
+}
+
+.book-film-section .main-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.book-film-section .left-paragraph,
+.book-film-section .right-paragraph {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.book-film-section .left-paragraph {
+  text-align: left;
+}
+
+.book-film-section .right-paragraph {
+  text-align: right;
+}
+
+#characters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Trois images par ligne */
+  grid-gap: 20px; /* Espacement entre les images */
+  justify-items: center; /* Centrer horizontalement les images */
+  margin-top: 250px;
+}
+
+#characters img {
+  max-width: 100%;
+  height: auto;
+}
